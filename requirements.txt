@@ -1,0 +1,4 @@
+aiohttp>=3.8.4
+python-dotenv>=1.0.0
+rich>=13.3.5
+psutil>=5.9.5
