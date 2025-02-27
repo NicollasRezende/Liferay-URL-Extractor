@@ -91,6 +91,7 @@ liferay_url_extractor/
 ├── utils/                # Utilitários e helpers
 ├── exporters/            # Exportadores para diferentes formatos
 ├── models/               # Modelos de dados
+├── organize/             # script de geração de planilha e arquivos de referencia
 ├── main.py               # Ponto de entrada do aplicativo
 └── requirements.txt      # Dependências do projeto
 ```
