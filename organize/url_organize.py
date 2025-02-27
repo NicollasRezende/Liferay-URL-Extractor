@@ -5,7 +5,7 @@ URL Management Tool - Ferramenta Unificada de Gerenciamento de URLs
 Este script unifica diversas funcionalidades para gerenciar URLs de um site Liferay:
 1. Reorganização de URLs baseada em hierarquia de planilha Excel
 2. Geração de CSV com URLs de destino
-3. Verificação de disponibilidade de URLs (404 check)
+3. Verificação de disponibilidade de URLs (404 check) -- esse aqui ta bugado usa o conferir.py
 4. Construção de hierarquia de URLs para visualização
 5. Correspondência entre URLs de origem e destino
 
