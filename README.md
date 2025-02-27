@@ -3,11 +3,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/version-3.0.0-blue.svg" alt="Version 3.0.0">
   <img src="https://img.shields.io/badge/python-3.8+-brightgreen.svg" alt="Python 3.8+">
-  <img src="https://img.shields.io/badge/license-MIT-yellow.svg" alt="License: MIT">
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/liferay/liferay-portal/master/logo.png" width="280" alt="Liferay Logo">
 </p>
 
 Uma ferramenta robusta para extrair e mapear todas as URLs de um portal Liferay, gerando relatórios detalhados em diferentes formatos e visualizando a estrutura hierárquica do site.
