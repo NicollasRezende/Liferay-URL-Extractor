@@ -3,6 +3,7 @@
 
 # Diretório de cache
 .cache/
+organizar/
 
 # Arquivos gerados pelo Liferay URL Extractor
 all_liferay_urls.csv
