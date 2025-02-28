@@ -9,7 +9,6 @@ Este script unifica diversas funcionalidades para gerenciar URLs de um site Life
 4. Construção de hierarquia de URLs para visualização
 5. Correspondência entre URLs de origem e destino
 
-Autor: Versão Unificada
 """
 
 import sys
@@ -134,20 +133,15 @@ class URLProcessor:
     def clean_url(self, url: str) -> str:
         """
         Limpa e normaliza uma URL, removendo protocolo, domínio, etc.
-        
-        Args:
-            url: URL a ser limpa
-            
-        Returns:
-            URL limpa
         """
         if not url:
             return ""
-            
+        # Convert to string to handle non-string inputs (e.g., numbers)
+        url = str(url)
         parsed = urlparse(url)
         path = parsed.path.rstrip('/')
         return path.lower()
-    
+        
     def simplify_url(self, url: str) -> str:
         """
         Simplifica uma URL mantendo apenas o domínio e o último segmento do caminho.
@@ -1004,7 +998,7 @@ class URLProcessor:
         # Carregar URLs de origem do Excel
         try:
             xlsx_df = pd.read_excel(source_xlsx, header=None, usecols=[source_column], skiprows=skip_rows)
-            xlsx_urls = xlsx_df.iloc[:, 0].dropna().tolist()
+            xlsx_urls = xlsx_df.iloc[:, 0].astype(str).dropna().tolist()
             
             self.logger.success(f"Carregadas {len(xlsx_urls)} URLs de origem")
             
